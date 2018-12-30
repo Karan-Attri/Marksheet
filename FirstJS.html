@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>FirstJS</title>
+        <meta charset="utf-8">
+        <script>
+            function func()
+            {
+                document.getElementById("demo").innerHTML=document.getElementById(1).value+document.getElementById(2).value;
+            }
+        </script>
+    </head>
+    <body>
+        <div>
+         NAME:   <input id="1"type="text" name="FIRST NAME" placeholder="First Name">
+            <br>
+         SURNAME:   <input id="2" type="text" name="LAST NAME" placeholder="Last Name">
+         <br>
+         <input type="submit" onclick="func() "value="SUBMIT">
+        </div>
+        <p id="demo"></p>
+    </body>
+</html>

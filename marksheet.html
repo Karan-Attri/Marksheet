@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>MARKSHEET</title>
+    <meta charset="utf-8">
+    <link href="stylesheet/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <form name="marksheet" action="javascript:void(0);" autocomplete="off">
+
+        <div class="flexy ">
+            <div>
+                <label>NAME:</label>
+
+                <input id="mark-0" type="text" name="FIRST" placeholder="First Name" required>
+            </div>
+
+            <div>
+                <label> ROLLNO:</label>
+
+                <input id="mark-1" type="text" name="rollno"  required>
+            </div>
+
+            <div>
+                <label>TOTAL:</label>
+
+                <input id="mark-2" type="number" name="total"  required>
+
+            </div>
+        </div>
+
+        <div class="flexy">
+            <div>
+                <label>PHYSICS:</label>
+                
+                    <input id="mark-3" type="number" maxlength="3" min="0" max="100" name="phy"  required>
+                
+            </div>
+            <div>
+            <label> MATHS:</label>
+            
+                <input id="mark-4" type="number" maxlength="3" min="0" max="100" name="math"  required>
+            </div>
+            <div>
+            <label> CHEMISTRY:</label>
+            
+                <input id="mark-5" type="number" maxlength="3" min="0" max="100" name="chem"  required>
+            </div>
+        </div>
+        <div class="flexy">
+            <input type="submit" onclick="myfunc() " value="SUBMIT">
+            <input type="submit" value="CLEAR">
+        </div>
+
+    </form>
+    
+    <table id="mytable">
+      
+    </table>
+    <div id="json"></div>
+    <script src="script.js"></script>
+</body>
+
+</html>
